@@ -2,7 +2,26 @@
     "tasks": [
         {
             "name": "Run cat once per minute",
-            "description": "cat main.go for testing"
-        }
+            "description": "cat main.go for testing",
+            "action":{
+                "executable": "/bin/cat",
+                "arguments": [
+                    "./test/test_file_3_lines.txt",
+                    "./test/lorem_ipsum.txt"
+                ]
+            }
+        },
+        {
+            "name": "Echo a line",
+            "description": "echo appending a line",
+            "action":{
+                "executable": "echo",
+                "arguments": [
+                    "\"hello world\"",
+                    ">>",
+                    "/Users/bill/MySource/go/goScheduler/echo.txt"
+                ]
+            }
+        }     
     ]
 }
