@@ -1,0 +1,8 @@
+{
+    "tasks": [
+        {
+            "name": "Run cat once per minute",
+            "description": "cat main.go for testing"
+        }
+    ]
+}
